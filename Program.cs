@@ -109,7 +109,7 @@ namespace square_9
 
                         //10-19: send ones place to teens dictionary, skip the ones count, increase x counter
                         case '1':
-                            Console.WriteLine("One - Getting the teens");
+                            //Console.WriteLine("One - Getting the teens");
                             wordForm += getTeensWord(userInput[x + 1]) + getPlaceValueWord(count - 1) + " ";
                             count -= 2;
                             x++;
@@ -118,7 +118,7 @@ namespace square_9
 
                         //20 - 90: get word from tens dictionary, decrease count
                         default:
-                            Console.WriteLine("Two - Getting the ones");
+                            //Console.WriteLine("Two - Getting the ones");
                             wordForm += getTensWord(userInput[x]) + getPlaceValueWord(count) + " ";
                             count--;
                             labelNeeded = true;
